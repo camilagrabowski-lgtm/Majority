@@ -1,0 +1,120 @@
+/* Reset e fontes bonitas */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap');
+
+HTML, BODY{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+.container {
+  background-color: #1c1c1c;
+  width: 90%;
+  max-width: 400px;
+  height: 100vh; /* ocupa a altura inteira */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centraliza verticalmente */
+  align-items: center;     /* centraliza horizontalmente */
+  border-radius: 15px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 0 30px rgba(0, 255, 100, 0.1);
+  text-align: center;
+}
+
+
+/* Títulos com fonte script */
+.t1 {
+    color: #00e676;
+    font-size: 2.2rem;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 0.5rem;
+}
+
+.t2 {
+    color: #81c784;
+    font-size: 1.4rem;
+    font-family: 'Pacifico', cursive;
+}
+
+/* Input estilizado */
+input[type="number"] {
+    padding: 12px;
+    margin-top: 1.2rem;
+    width: 100%;
+    border: 2px solid #555;
+    background-color: #2e2e2e;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+/* Botão com hover */
+button {
+    margin-top: 1rem;
+    background-color: #00e676;
+    color: #000;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00c853;
+    color: white;
+}
+
+/* Resultado */
+#result {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+}
+
+/* Idade exibida */
+#age {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Mensagens finais */
+#v1,
+#v2 {
+    display: none;
+    margin-top: 2rem;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Acesso permitido */
+#v1 {
+    background-color: #1b5e20;
+    color: #a5d6a7;
+    border: 2px solid #00e676;
+}
+
+/* Acesso negado */
+#v2 {
+    background-color: #b71c1c;
+    color: #ffcdd2;
+    border: 2px solid #ff1744;
+}
